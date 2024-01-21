@@ -45,17 +45,8 @@ public:
         dict->setObject(CCString::create("0"), "finishColorVarianceAlpha");
 
         auto p = CCParticleSystemQuad::create();
-        if(p && p->initWithDictionary(dict)) {
-            dict->release();
-            p->autorelease();
-        }
-        else {
-            CC_SAFE_DELETE(p);
-            return nullptr;
-        }
-
-        *reinterpret_cast<int*>(reinterpret_cast<uintptr_t>(p) + 0x208) = 2;
-
+        p->initWithDictionary(dict, false);
+        
         return p;
     }
 };
