@@ -1,10 +1,11 @@
 {
-	"geode": "2.0.0",
+	"geode": "2.0.0-beta.25",
 	"gd": {
 		"win": "2.204",
-		"android": "2.205"
+		"android": "2.205",
+		"mac": "2.200"
 	},
-	"version": "v1.1.2",
+	"version": "v1.1.3",
 	"id": "alphalaneous.projectedstars",
 	"name": "Projected Stars",
 	"developer": "Alphalaneous",
