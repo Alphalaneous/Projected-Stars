@@ -4,30 +4,6 @@
 
 using namespace geode::prelude;
 
-template<typename Base, typename T>
-bool instanceof(const T ptr) {
-    return dynamic_cast<const Base>(ptr) != nullptr;
-}
-
-template<typename O, typename T>
-T getFromObjectPos(CCObject* obj, CCPoint point) {
-    CCObject* pObj = nullptr;
-
-    CCARRAY_FOREACH(dynamic_cast<O>(obj)->getChildren(), pObj) {
-        CCNode* currentNode = (CCNode*)pObj;
-        CCPoint xy = currentNode->getPosition();
-
-        T obj = dynamic_cast<T>(pObj);
-
-        if (instanceof<T>(obj)) {
-            if (point.x == xy.x && point.y == xy.y) {
-                return obj;
-            }
-        }
-    }
-    return nullptr;
-}
-
 class $modify(LevelInfoLayer) {
 	
 	bool init(GJGameLevel* level, bool a1) {
@@ -59,8 +35,7 @@ class $modify(LevelInfoLayer) {
 			projectedStarsLabel->setScale(0.4f);
 			projectedStarsLabel->setTag(84739);
 
-			CCSprite* progressBar = getFromObjectPos<CCLayer*, CCSprite*>(this, {(winSize.width / 2), 136});
-
+			CCSprite* progressBar = typeinfo_cast<CCSprite*>(getChildByID("normal-mode-bar"));
 			CCSprite* progressInside = reinterpret_cast<CCSprite*>(progressBar->getChildren()->objectAtIndex(0));
 
 			float particleAmount = level->m_normalPercent;
