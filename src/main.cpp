@@ -51,7 +51,7 @@ class $modify(LevelInfoLayer) {
 		projectedStarsLabel->setID("stars-label"_spr);
 
 		float units = 0;
-		bool showStarSprite = true;
+		bool showStarSprite = false;
 		bool showOutline = false;
 		CCSprite* starSpriteOutline = CCSprite::create(spriteOutlineName.c_str());
 		starSpriteOutline->setPosition({ (winSize.width / 2) + 118, 136});
@@ -62,7 +62,7 @@ class $modify(LevelInfoLayer) {
 
 		if(!isPlatformer){
 			units = level->m_normalPercent * (234.0f/100.0f);
-
+			showStarSprite = true;
 			CCSprite* progressBar = typeinfo_cast<CCSprite*>(getChildByID("normal-mode-bar"));
 			CCSprite* progressInside = reinterpret_cast<CCSprite*>(progressBar->getChildren()->objectAtIndex(0));
 
