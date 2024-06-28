@@ -11,6 +11,14 @@
 	"developer": "Alphalaneous",
 	"description": "Shows how many stars you will get if you beat a level with some extra flair!",
 	"repository": "https://github.com/Alphalaneous/Projected-Stars",
+	"links": {
+		"community": "https://discord.com/invite/Txn2CA5dHF",
+		"source": "https://github.com/Alphalaneous/Projected-Stars"
+	},
+	"issues" : {
+		"info": "GitHub Issues",
+		"url": "https://github.com/Alphalaneous/Projected-Stars/issues"
+	},
 	"resources": {
         "sprites": [
             "resources/starOutline.png",
