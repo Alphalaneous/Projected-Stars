@@ -24,12 +24,17 @@ class $modify(LevelInfoLayer) {
 		int count = 0;
 
 		if(!isPlatformer){
-			count = std::stoi(statDict->valueForKey("6")->m_sString);
+
+			std::string value = statDict->valueForKey("6")->m_sString;
+			if(value.empty()) count = 0;
+			else count = std::stoi(value);
 			spriteName = "GJ_bigStar_001.png";
 			spriteOutlineName = "starOutline.png"_spr;
 		}
 		else {
-			count = std::stoi(statDict->valueForKey("28")->m_sString);
+			std::string value = statDict->valueForKey("28")->m_sString;
+			if(value.empty()) count = 0;
+			else count = std::stoi(value);
 			spriteName = "GJ_bigMoon_001.png";
 			spriteOutlineName = "moonOutline.png"_spr;
 		}
