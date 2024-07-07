@@ -1,4 +1,6 @@
 # Projected Stars Changelog
+## 1.2.6
+* Fix some bugs
 ## 1.2.5
 * Fix bugs
 ## 1.2.4
