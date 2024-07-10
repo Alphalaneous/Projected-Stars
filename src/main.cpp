@@ -95,17 +95,19 @@ class $modify(LevelInfoLayer) {
 		starSprite->setZOrder(3);
 		starSprite->setID("stars-sprite"_spr);
 
-		CCParticleSystem* particles = ParticleHelper::createStarParticles(particleAmount);
-		particles->setPosition({ (winSize.width / 2) - 118 + units, 136});
-		particles->setAnchorPoint({ 0.5f, 0.5f });
-		particles->setScale(0.5f);
-		particles->setZOrder(3);
-		particles->setID("stars-particles"_spr);
+		if(CCParticleSystem* particles = ParticleHelper::createStarParticles(particleAmount)) {
+			particles->setPosition({ (winSize.width / 2) - 118 + units, 136});
+			particles->setAnchorPoint({ 0.5f, 0.5f });
+			particles->setScale(0.5f);
+			particles->setZOrder(3);
+			particles->setID("stars-particles"_spr);
+			this->addChild(particles);
+		}
+		
 
 		starSprite->setVisible(showStarSprite);
 		starSpriteOutline->setVisible(showOutline);
 
-		this->addChild(particles);
 		this->addChild(starSprite);
 		this->addChild(starSpriteOutline);
 		this->addChild(projectedStarsLabel);

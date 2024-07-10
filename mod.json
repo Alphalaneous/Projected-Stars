@@ -1,11 +1,11 @@
 {
-	"geode": "3.1.1",
+	"geode": "3.2.0",
 	"gd": {
 		"win": "2.206",
 		"android": "2.206",
 		"mac": "2.206"
 	},
-	"version": "v1.2.6",
+	"version": "v1.2.7",
 	"id": "alphalaneous.projectedstars",
 	"name": "Projected Stars",
 	"developer": "Alphalaneous",
