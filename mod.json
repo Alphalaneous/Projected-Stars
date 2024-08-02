@@ -1,11 +1,11 @@
 {
-	"geode": "3.2.0",
+	"geode": "3.4.0",
 	"gd": {
 		"win": "2.206",
 		"android": "2.206",
 		"mac": "2.206"
 	},
-	"version": "v1.2.8",
+	"version": "v1.2.9",
 	"id": "alphalaneous.projectedstars",
 	"name": "Astral Projection",
 	"developer": "Alphalaneous",
@@ -16,6 +16,11 @@
             "resources/starOutline.png",
 			"resources/moonOutline.png"
         ]
+    },
+	"links": {
+        "homepage": "https://twitter.com/alphalaneous",
+        "source": "https://github.com/Alphalaneous/Projected-Stars",
+        "community": "https://discord.gg/Txn2CA5dHF"
     },
 	"dependencies": [
         {
