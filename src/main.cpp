@@ -50,7 +50,7 @@ class $modify(LevelInfoLayer) {
 		projectedStarsLabel->setColor(ccWHITE);
 		projectedStarsLabel->setString(starCountStr.c_str());
 		projectedStarsLabel->setAnchorPoint({0, 0.5});
-		projectedStarsLabel->setPosition({ (winSize.width / 2) + 133.5f, (winSize.height / 2) - 23.0f });
+		projectedStarsLabel->setPosition({ (winSize.width / 2) + 133.5f, 136 });
 		projectedStarsLabel->setZOrder(10);
 		projectedStarsLabel->setScale(0.4f);
 		projectedStarsLabel->setID("stars-label"_spr);
