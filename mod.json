@@ -1,11 +1,11 @@
 {
-	"geode": "3.4.0",
+	"geode": "4.0.0-alpha.1",
 	"gd": {
-		"win": "2.206",
-		"android": "2.206",
-		"mac": "2.206"
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074"
 	},
-	"version": "v1.2.10",
+	"version": "v1.2.11-alpha.1",
 	"id": "alphalaneous.projectedstars",
 	"name": "Astral Projection",
 	"developer": "Alphalaneous",
