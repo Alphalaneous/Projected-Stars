@@ -10,7 +10,7 @@ public:
     
     static CCParticleSystemQuad* createStarParticles(int maxParticles) {
 
-        auto dict = CCDictionary::createWithContentsOfFileThreadSafe("dragEffect.plist");
+        auto dict = CCDictionary::createWithContentsOfFile("dragEffect.plist");
 
         if(dict){
 
