@@ -1,3 +1,6 @@
+## 1.2.12
+* Add tags
+
 ## 1.2.10
 * Fix positioning issues on 4:3
 
