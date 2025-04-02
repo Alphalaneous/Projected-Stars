@@ -1,3 +1,6 @@
+## 1.2.13
+* iOS support
+
 ## 1.2.12
 * Add tags
 
