@@ -1,5 +1,6 @@
-## 1.2.13
+## 1.3.0
 * iOS support
+* Code cleanup
 
 ## 1.2.12
 * Add tags
