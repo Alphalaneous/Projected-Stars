@@ -1,3 +1,7 @@
+# 1.4.1
+- Fix particle amount
+- Adjust particle position
+
 # 1.4.0
 - Geode v5 Support
 - More code cleanup

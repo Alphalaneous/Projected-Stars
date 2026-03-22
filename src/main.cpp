@@ -77,10 +77,10 @@ class $modify(LevelInfoLayer) {
 
 		projectedStarsLabel->setString(numToString(count + countToAdd).c_str());
 
-		float particleAmount = level->m_normalPercent;
+		float particleAmount = 5;
 
-		if (level->m_normalPercent < 5 && !level->isPlatformer()) particleAmount = 5;
-		if (level->isPlatformer()) particleAmount = 50;
+		if (level->m_normalPercent == 100 && level->isPlatformer()) particleAmount = 25;
+		if (level->m_normalPercent > 5 && !level->isPlatformer()) particleAmount = level->m_normalPercent / 2.f;
 
 		auto starSprite = CCSprite::createWithSpriteFrameName(spriteName.c_str());
 		starSprite->setPosition({ (winSize.width / 2) - 118 + units, 136});
@@ -94,7 +94,7 @@ class $modify(LevelInfoLayer) {
 		auto particles = GameToolbox::particleFromString(fmt::format("100a-1a1a1a33a0a360a20a5a10a10a0a0a0a0a0a0a15a5a0a360a1a1a1a1a1a1a1a0a5a0a0a360a1a1a1a1a1a1a0a0a0a0a0a0a100a0a0a0a0a0a0a2a1a0a0a0a{}a0a0a0a0a0a0a0a0a0a0a5a0a5a0", particleID).c_str(), CCParticleSystemQuad::create(), false);
 		particles->setTotalParticles(particleAmount / 2);
 
-		auto offset = level->isPlatformer() ? CCPoint{-3 , -1} : CCPoint{0, 0};
+		auto offset = level->isPlatformer() ? CCPoint{-2 , -1} : CCPoint{0, 0};
 
 		particles->setPosition(CCPoint{(winSize.width / 2) - 118 + units , 136} + offset);
 		particles->setAnchorPoint({ 0.5f, 0.5f });
