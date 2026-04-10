@@ -11,10 +11,6 @@
 	"name": "Astral Projection",
 	"developer": "Alphalaneous",
 	"description": "Preview level completion rewards with style!",
-	"issues" : {
-		"info": "GitHub Issues",
-		"url": "https://github.com/Alphalaneous/Projected-Stars/issues"
-	},
 	"resources": {
         "sprites": [
             "resources/starOutline.png",
@@ -23,7 +19,7 @@
     },
 	"links": {
         "homepage": "https://linktr.ee/Alphalaneous",
-        "source": "https://github.com/Alphalaneous/Projected-Stars",
+        "source": "https://github.com/Alphalaneous/Astral-Projection",
         "community": "https://discord.gg/Txn2CA5dHF"
     },
 	"dependencies": {
